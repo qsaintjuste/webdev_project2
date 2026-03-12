@@ -26,3 +26,30 @@ body {
   nav a:hover {
     color: #60a5fa;
   }
+  main {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  h2 {
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 0.3rem;
+  }
+  
+  p, li {
+    margin-bottom: 0.6rem;
+    font-size: 1rem;
+  }
+  
+  section {
+    margin-bottom: 1.5rem;
+  }
