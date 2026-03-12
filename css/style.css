@@ -3,53 +3,68 @@
 body {
     font-family: 'Poppins', Arial, sans-serif;
     line-height: 1.6;
-  }
+    background-color: #f3f4f6;
+    color: #222;
+}
 
-  header {
+header {
     background-color: #1f2937;
     padding: 1rem 0;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     display: flex;
     justify-content: center;
     gap: 2rem;
-  }
-  
-  nav a {
+}
+
+nav a {
     color: white;
     font-weight: 600;
     font-size: 1rem;
     transition: color 0.3s ease;
-  }
-  
-  nav a:hover {
+}
+
+nav a:hover {
     color: #60a5fa;
-  }
-  main {
+}
+
+main {
     max-width: 800px;
     margin: 3rem auto;
-    padding: 0 1.5rem;
-  }
-  
-  h1 {
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+h1 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
-  }
-  
-  h2 {
+}
+
+h2 {
     margin-top: 2rem;
     margin-bottom: 0.8rem;
     font-size: 1.3rem;
     border-bottom: 2px solid #e5e7eb;
     padding-bottom: 0.3rem;
-  }
-  
-  p, li {
+}
+
+p,
+li {
     margin-bottom: 0.6rem;
     font-size: 1rem;
-  }
-  
-  section {
+}
+
+section {
     margin-bottom: 1.5rem;
-  }
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
