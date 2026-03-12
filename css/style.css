@@ -1,47 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
+/* ---------- Global Background ---------- */
+
 body {
     font-family: 'Poppins', Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f3f4f6;
+    margin: 0;
     color: #222;
+
+    /* Cyber-inspired gradient background */
+    background: linear-gradient(135deg, #0f172a, #1e293b, #111827);
+    background-attachment: fixed;
 }
 
+/* ---------- Header ---------- */
+
 header {
-    background-color: #1f2937;
+    background: linear-gradient(90deg, #1e293b, #0f172a);
     padding: 1rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
+
+/* ---------- Navigation ---------- */
 
 nav ul {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 2.5rem;
 }
 
 nav a {
-    color: white;
+    color: #e2e8f0;
     font-weight: 600;
     font-size: 1rem;
-    transition: color 0.3s ease;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
 }
 
 nav a:hover {
-    color: #60a5fa;
+    color: #38bdf8;
 }
+
+/* ---------- Main Content Card ---------- */
 
 main {
-    max-width: 800px;
-    margin: 3rem auto;
-    padding: 2rem;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    max-width: 850px;
+    margin: 4rem auto;
+    padding: 2.5rem;
+
+    background: #ffffff;
+    border-radius: 12px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
 }
 
+/* ---------- Headings ---------- */
 
 h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-bottom: 1.5rem;
+    color: #111827;
 }
 
 h2 {
@@ -50,21 +68,28 @@ h2 {
     font-size: 1.3rem;
     border-bottom: 2px solid #e5e7eb;
     padding-bottom: 0.3rem;
+    color: #1f2937;
 }
+
+/* ---------- Text ---------- */
 
 p,
 li {
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.7rem;
     font-size: 1rem;
 }
 
+/* ---------- Sections ---------- */
+
 section {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
+
+/* ---------- Images ---------- */
 
 section img {
     width: 100%;
     height: auto;
-    border-radius: 6px;
+    border-radius: 8px;
     margin-bottom: 1rem;
 }
