@@ -24,11 +24,19 @@ header {
 
 nav ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 2.5rem;
     padding: 0;
     margin: 0;
+}
+
+nav ul li {
+    float: left;
+    margin: 0 20px;
+}
+
+header::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 nav a {
@@ -45,6 +53,7 @@ nav a:hover {
 }
 
 main {
+    position: relative;
     max-width: 850px;
     margin: 4rem auto;
     padding: 2.5rem;
@@ -54,14 +63,16 @@ main {
 }
 
 .hero {
+    position: relative;
     text-align: center;
     margin-bottom: 3rem;
 }
 
 .hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-    color: #111827;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .hero p {
@@ -81,10 +92,9 @@ h3 {
 }
 
 section img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin: 1rem 0;
+    float: right;
+    width: 250px;
+    margin: 10px 0 10px 20px;
 }
 
 footer {
