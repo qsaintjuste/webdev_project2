@@ -25,7 +25,8 @@ header {
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
+    width: fit-content;
 }
 
 nav ul li {
@@ -65,12 +66,13 @@ main {
 .hero {
     position: relative;
     text-align: center;
+    padding-top: 40px;
     margin-bottom: 3rem;
 }
 
 .hero h1 {
     position: absolute;
-    top: -20px;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -93,8 +95,20 @@ h3 {
 
 section img {
     float: right;
-    width: 250px;
-    margin: 10px 0 10px 20px;
+    width: 260px;
+    margin: 0 0 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+section::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+section {
+    margin-bottom: 3rem;
 }
 
 footer {
